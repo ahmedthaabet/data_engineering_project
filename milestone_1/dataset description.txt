@@ -1,0 +1,78 @@
+The prompt : generate a dataset description document for the output dataframe (one sentence for each
+column) and i provided the final datset as csv file
+
+The output:
+
+Here is a clean **dataset description document** — clear, professional sentence per column.
+---
+
+# 📄 **Dataset Description — Final Output DataFrame**
+
+Below is a one-sentence description for each column in the final cleaned and merged dataset:
+
+### **1. transaction_id**
+
+A unique identifier for each trade executed by a customer.
+
+### **2. trade_date**
+
+The calendar date on which the trade was executed.
+
+### **3. customer_id**
+
+A unique identifier representing the customer who performed the trade.
+
+### **4. stock_ticker**
+
+The stock symbol associated with the traded financial instrument.
+
+### **5. transaction_type**
+
+Indicates whether the trade was a "BUY" or "SELL" transaction.
+
+### **6. quantity**
+
+The number of stock units bought or sold in the transaction.
+
+### **7. average_trade_size**
+
+The average monetary value of trades previously executed by the customer up to that date.
+
+### **8. stock_price**
+
+The price of one unit of the specified stock on the trade date.
+
+### **9. total_trade_amount**
+
+The total monetary value of the trade, calculated as `stock_price × quantity`.
+
+### **10. customer_account_type**
+
+Specifies the type of financial account held by the customer.
+(A retail customer represents an individual investor—a private person trading in their own personal account.)
+(An institutional customer is a professional organization or entity that invests large amounts of capital.)
+
+### **11. day_name**
+
+The day of the week on which the trade occurred (e.g., Monday, Tuesday).
+
+### **12. is_weekend**
+
+A boolean indicator showing whether the trade date falls on a weekend.
+
+### **13. is_holiday**
+
+A boolean indicator that identifies whether the trade occurred on a holiday.
+
+### **14. stock_liquidity_tier**
+
+A classification representing the liquidity level of the traded stock (e.g., High, Medium, Low).
+
+### **15. stock_sector**
+
+The economic sector to which the traded stock belongs (e.g., Technology, Healthcare).
+
+### **16. stock_industry**
+
+A more specific industry classification within the stock’s sector.
+

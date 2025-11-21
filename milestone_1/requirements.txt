@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+typing
+PyYAML
+requests
+sqlalchemy
+psycopg2-binary

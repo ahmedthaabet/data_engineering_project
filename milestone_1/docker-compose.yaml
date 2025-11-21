@@ -1,0 +1,47 @@
+version: "3.9"
+services:
+  main:
+    build: .
+    container_name: main
+    volumes:
+      - ./app/src:/app/src
+      - ./app/data:/app/data
+    restart: "on-failure"
+    depends_on:
+      - pgdatabase
+
+  pgdatabase:
+    image: postgres:13
+    container_name: pgdatabase
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: portfolio_db
+    ports:
+      - 5454:5432
+    volumes:
+      - ./app/volumes/data_postgres:/var/lib/postgresql/data 
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: root@root.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - 8090:80
+    depends_on:
+      - pgdatabase
+    restart: on-failure
+
+    volumes:
+      - ./app/volumes/pgadmin_data:/var/lib/pgadmin
+
+
+
+
+
+
+
+
+
